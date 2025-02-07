@@ -1,0 +1,67 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2c2c2c, #6c6c6c); /* ไล่สีเทา */
+    color: #ffffff;
+}
+
+/* กล่องการ์ด */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* หัวข้อ */
+.auth-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* ช่องกรอกข้อมูล */
+.auth-input {
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    padding: 10px;
+    background: #d9d9d9;
+    transition: 0.3s;
+}
+
+.auth-input:focus {
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    background: #ffffff;
+}
+
+/* ปุ่ม */
+.auth-btn {
+    font-size: 18px;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    transition: 0.3s;
+    padding: 10px;
+    border: none;
+}
+
+.auth-btn:hover {
+    background: #000;
+    color: white;
+}
+
+/* ลิงก์ */
+.auth-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+    color: #000;
+}

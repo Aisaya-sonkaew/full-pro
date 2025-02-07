@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ศิลปินเอกไทย</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="">ศิลปินเอกไทย</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact/contact.html">ติดต่อ</a></li>
+                    <!-- ปุ่ม Login -->
+                    <li class="nav-item">
+                        <a class="login-btn" href="/login/login.html" role="button">Login</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">แนะนำศิลปินเอกของไทย</h1>
+            <p class="lead">รวมศิลปินที่มีผลงานโดดเด่นในแต่ละด้านของศิลปะ</p>
+        </div>
+    </header>
+
+    <!-- Tabs for Categories -->
+    <div class="container my-5">
+        <ul class="nav nav-tabs" id="artistTabs">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#sculpture">ประติมากรรม</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#music">ดนตรี</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#painting">จิตรกรรม</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#performance">การแสดง</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#literature">วรรณกรรม</a></li>
+        </ul>
+
+        <div class="tab-content mt-4">
+            <div class="tab-pane fade show active" id="sculpture">
+                <div class="row" id="sculpture-list"></div>
+            </div>
+            <div class="tab-pane fade" id="music">
+                <div class="row" id="music-list"></div>
+            </div>
+            <div class="tab-pane fade" id="painting">
+                <div class="row" id="painting-list"></div>
+            </div>
+            <div class="tab-pane fade" id="performance">
+                <div class="row" id="performance-list"></div>
+            </div>
+            <div class="tab-pane fade" id="literature">
+                <div class="row" id="literature-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับแสดงรายละเอียด -->
+    <div class="modal fade" id="artistModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="artistName"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="artistImage" class="img-fluid mb-3" alt="">
+                    <p id="artistDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
